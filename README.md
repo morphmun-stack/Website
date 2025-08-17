@@ -15,7 +15,7 @@ A modern, responsive website for the Morph MUN 2025 conference, featuring profes
 - **What is MUN**: Educational content for newcomers
 - **Mission & Vision**: Organization's goals and objectives
 - **Timeline**: Historical progression of the conference
-- **Secretary-General Message**: Personal welcome note
+- **Secretary-General Message**: Personal welcome not
 - **Secretariat Team**: Team member profiles and roles
 
 ### Committees Page
