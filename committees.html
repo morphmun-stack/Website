@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Committees - Morph MUN 2025</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="committees.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/logo.png" alt="Morph MUN" class="logo">
+                <span>Morph MUN</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="committees.html" class="nav-link active">Committees</a></li>
+                <li><a href="registration.html" class="nav-link">Registration</a></li>
+                <li><a href="resources.html" class="nav-link">Resources</a></li>
+                <li><a href="experience.html" class="nav-link">Experience</a></li>
+                <li><a href="updates.html" class="nav-link">Updates</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Committees & Agendas</h1>
+            <p>Explore our diverse range of committees and their compelling agendas</p>
+        </div>
+    </section>
+
+    <!-- Committee Categories -->
+    <section class="committee-categories">
+        <div class="container">
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="un">UN Bodies</button>
+                <button class="tab-btn" data-category="crisis">Crisis Committees</button>
+                <button class="tab-btn" data-category="specialized">Specialized</button>
+                <button class="tab-btn" data-category="fantasy">Fantasy Councils</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- UN Bodies -->
+    <section class="committee-section active" id="un">
+        <div class="container">
+            <div class="committees-grid">
+                <!-- UNGA -->
+                <div class="committee-card">
+                    <div class="committee-header">
+                        <div class="committee-logo">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>United Nations General Assembly</h3>
+                        <span class="committee-type">UN Body</span>
+                    </div>
+                    <div class="committee-content">
+                        <h4>Agenda: Addressing Climate-Induced Migration and Displacement</h4>
+                        <p>Examine the complex challenges of climate change-induced migration, focusing on international cooperation, legal frameworks, and sustainable solutions for displaced populations.</p>
+                        <div class="committee-details">
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <span>193 Countries</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Beginner Friendly</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-star"></i>
+                                <span>Most Popular</span>
+                            </div>
+                        </div>
+                        <div class="chair-info">
+                            <h5>Chair: Sarah Johnson</h5>
+                            <p>International Relations Major, 3+ years MUN experience</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UNSC -->
+                <div class="committee-card">
+                    <div class="committee-header">
+                        <div class="committee-logo">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>United Nations Security Council</h3>
+                        <span class="committee-type">UN Body</span>
+                    </div>
+                    <div class="committee-content">
+                        <h4>Agenda: Cybersecurity Threats to International Peace and Security</h4>
+                        <p>Address the growing challenges of cyber warfare, state-sponsored cyber attacks, and the need for international cybersecurity frameworks and cooperation.</p>
+                        <div class="committee-details">
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <span>15 Countries</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Advanced</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-fire"></i>
+                                <span>High Intensity</span>
+                            </div>
+                        </div>
+                        <div class="chair-info">
+                            <h5>Chair: Michael Chen</h5>
+                            <p>Cybersecurity Expert, Former UNSC Delegate</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UNHRC -->
+                <div class="committee-card">
+                    <div class="committee-header">
+                        <div class="committee-logo">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>United Nations Human Rights Council</h3>
+                        <span class="committee-type">UN Body</span>
+                    </div>
+                    <div class="committee-content">
+                        <h4>Agenda: Digital Rights and Privacy in the Age of AI</h4>
+                        <p>Examine the intersection of artificial intelligence, digital privacy, and human rights, focusing on regulation, accountability, and protection of fundamental freedoms.</p>
+                        <div class="committee-details">
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <span>47 Countries</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Intermediate</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-lightbulb"></i>
+                                <span>Innovative</span>
+                            </div>
+                        </div>
+                        <div class="chair-info">
+                            <h5>Chair: Elena Rodriguez</h5>
+                            <p>Human Rights Lawyer, AI Ethics Researcher</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Crisis Committees -->
+    <section class="committee-section" id="crisis">
+        <div class="container">
+            <div class="committees-grid">
+                <!-- Joint Crisis -->
+                <div class="committee-card crisis">
+                    <div class="committee-header">
+                        <div class="committee-logo">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h3>Joint Crisis Committee</h3>
+                        <span class="committee-type">Crisis</span>
+                    </div>
+                    <div class="committee-content">
+                        <h4>Agenda: The Great Tech War of 2025</h4>
+                        <p>Navigate a world where major tech corporations have become de facto superpowers, competing for global digital dominance and control over critical infrastructure.</p>
+                        <div class="committee-details">
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <span>Dynamic</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Expert Level</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-bolt"></i>
+                                <span>Fast-Paced</span>
+                            </div>
+                        </div>
+                        <div class="chair-info">
+                            <h5>Directors: Alex Kim & Priya Patel</h5>
+                            <p>Crisis veterans with 10+ years combined experience</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Historical Crisis -->
+                <div class="committee-card crisis">
+                    <div class="committee-header">
+                        <div class="committee-logo">
+                            <i class="fas fa-history"></i>
+                        </div>
+                        <h3>Historical Crisis: Cuban Missile Crisis</h3>
+                        <span class="committee-type">Crisis</span>
+                    </div>
+                    <div class="committee-content">
+                        <h4>Agenda: October 1962 - The Brink of Nuclear War</h4>
+                        <p>Relive the most dangerous moment in human history. Make critical decisions as world leaders during the Cuban Missile Crisis, where every choice could lead to nuclear annihilation.</p>
+                        <div class="committee-details">
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <span>Historical</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Advanced</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-bomb"></i>
+                                <span>High Stakes</span>
+                            </div>
+                        </div>
+                        <div class="chair-info">
+                            <h5>Director: Dr. Robert Wilson</h5>
+                            <p>Cold War Historian, Crisis Committee Specialist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialized Committees -->
+    <section class="committee-section" id="specialized">
+        <div class="container">
+            <div class="committees-grid">
+                <!-- AIPPM -->
+                <div class="committee-card">
+                    <div class="committee-header">
+                        <div class="committee-logo">
+                            <i class="fas fa-landmark"></i>
+                        </div>
+                        <h3>All India Political Parties Meet</h3>
+                        <span class="committee-type">Specialized</span>
+                    </div>
+                    <div class="committee-content">
+                        <h4>Agenda: Electoral Reforms and Democratic Governance</h4>
+                        <p>Debate comprehensive electoral reforms, campaign finance regulations, and measures to strengthen democratic institutions in India's diverse political landscape.</p>
+                        <div class="committee-details">
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <span>Political Parties</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Intermediate</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-flag"></i>
+                                <span>India Focus</span>
+                            </div>
+                        </div>
+                        <div class="chair-info">
+                            <h5>Chair: Rajesh Kumar</h5>
+                            <p>Political Science Professor, Electoral Expert</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- International Press -->
+                <div class="committee-card">
+                    <div class="committee-header">
+                        <div class="committee-logo">
+                            <i class="fas fa-newspaper"></i>
+                        </div>
+                        <h3>International Press Corps</h3>
+                        <span class="committee-type">Specialized</span>
+                    </div>
+                    <div class="committee-content">
+                        <h4>Agenda: Media Ethics in the Digital Age</h4>
+                        <p>Report on all committees, investigate stories, and navigate the challenges of responsible journalism in an era of misinformation and digital media.</p>
+                        <div class="committee-details">
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <span>Journalists</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>All Levels</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-pen"></i>
+                                <span>Creative</span>
+                            </div>
+                        </div>
+                        <div class="chair-info">
+                            <h5>Editor-in-Chief: Maria Santos</h5>
+                            <p>Investigative Journalist, Digital Media Expert</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fantasy Councils -->
+    <section class="committee-section" id="fantasy">
+        <div class="container">
+            <div class="committees-grid">
+                <!-- Harry Potter -->
+                <div class="committee-card fantasy">
+                    <div class="committee-header">
+                        <div class="committee-logo">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <h3>Wizengamot - Harry Potter Universe</h3>
+                        <span class="committee-type">Fantasy</span>
+                    </div>
+                    <div class="committee-content">
+                        <h4>Agenda: Magical Creature Rights and Integration</h4>
+                        <p>As members of the Wizengamot, debate the rights of magical creatures, their integration into wizarding society, and the repeal of discriminatory laws.</p>
+                        <div class="committee-details">
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <span>Wizengamot</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Beginner</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-magic"></i>
+                                <span>Magical</span>
+                            </div>
+                        </div>
+                        <div class="chair-info">
+                            <h5>Chief Warlock: Hermione Granger</h5>
+                            <p>Minister for Magic, S.P.E.W. Founder</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game of Thrones -->
+                <div class="committee-card fantasy">
+                    <div class="committee-header">
+                        <div class="committee-logo">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h3>Small Council - Game of Thrones</h3>
+                        <span class="committee-type">Fantasy</span>
+                    </div>
+                    <div class="committee-content">
+                        <h4>Agenda: The Great Winter and Resource Management</h4>
+                        <p>As the Long Night approaches, manage Westeros's resources, prepare for the coming winter, and navigate the complex politics of the Seven Kingdoms.</p>
+                        <div class="committee-details">
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <span>Noble Houses</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Advanced</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-snowflake"></i>
+                                <span>Epic</span>
+                            </div>
+                        </div>
+                        <div class="chair-info">
+                            <h5>Hand of the Queen: Tyrion Lannister</h5>
+                            <p>Master of Coin, Strategic Advisor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Country Matrix -->
+    <section class="country-matrix">
+        <div class="container">
+            <h2>Country Matrix</h2>
+            <p class="section-subtitle">View country assignments and committee allocations</p>
+            
+            <div class="matrix-controls">
+                <select id="committeeFilter" class="matrix-filter">
+                    <option value="">All Committees</option>
+                    <option value="UNGA">UN General Assembly</option>
+                    <option value="UNSC">UN Security Council</option>
+                    <option value="UNHRC">UN Human Rights Council</option>
+                    <option value="AIPPM">All India Political Parties Meet</option>
+                    <option value="IPC">International Press Corps</option>
+                </select>
+                
+                <button class="btn btn-primary" onclick="downloadMatrix()">
+                    <i class="fas fa-download"></i> Download Matrix
+                </button>
+            </div>
+
+            <div class="matrix-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Country/Entity</th>
+                            <th>Committee</th>
+                            <th>Difficulty</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>United States</td>
+                            <td>UNSC</td>
+                            <td><span class="difficulty advanced">Advanced</span></td>
+                            <td><span class="status available">Available</span></td>
+                        </tr>
+                        <tr>
+                            <td>China</td>
+                            <td>UNSC</td>
+                            <td><span class="difficulty advanced">Advanced</span></td>
+                            <td><span class="status available">Available</span></td>
+                        </tr>
+                        <tr>
+                            <td>India</td>
+                            <td>UNGA</td>
+                            <td><span class="difficulty beginner">Beginner</span></td>
+                            <td><span class="status available">Available</span></td>
+                        </tr>
+                        <tr>
+                            <td>United Kingdom</td>
+                            <td>UNSC</td>
+                            <td><span class="difficulty advanced">Advanced</span></td>
+                            <td><span class="status available">Available</span></td>
+                        </tr>
+                        <tr>
+                            <td>France</td>
+                            <td>UNSC</td>
+                            <td><span class="difficulty advanced">Advanced</span></td>
+                            <td><span class="status available">Available</span></td>
+                        </tr>
+                        <tr>
+                            <td>Germany</td>
+                            <td>UNGA</td>
+                            <td><span class="difficulty intermediate">Intermediate</span></td>
+                            <td><span class="status available">Available</span></td>
+                        </tr>
+                        <tr>
+                            <td>Japan</td>
+                            <td>UNGA</td>
+                            <td><span class="difficulty intermediate">Intermediate</span></td>
+                            <td><span class="status available">Available</span></td>
+                        </tr>
+                        <tr>
+                            <td>Brazil</td>
+                            <td>UNGA</td>
+                            <td><span class="difficulty intermediate">Intermediate</span></td>
+                            <td><span class="status available">Available</span></td>
+                        </tr>
+                        <tr>
+                            <td>South Africa</td>
+                            <td>UNHRC</td>
+                            <td><span class="difficulty intermediate">Intermediate</span></td>
+                            <td><span class="status available">Available</span></td>
+                        </tr>
+                        <tr>
+                            <td>Australia</td>
+                            <td>UNGA</td>
+                            <td><span class="difficulty beginner">Beginner</span></td>
+                            <td><span class="status available">Available</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Morph MUN 2025</h3>
+                    <p>Debating Diplomacy. Creating Change.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="registration.html">Registration</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> info@morphmun.org</p>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Morph MUN. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="committees.js"></script>
+</body>
+</html>

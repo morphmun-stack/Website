@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - Morph MUN 2025</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="registration.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/logo.png" alt="Morph MUN" class="logo">
+                <span>Morph MUN</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="committees.html" class="nav-link">Committees</a></li>
+                <li><a href="registration.html" class="nav-link active">Registration</a></li>
+                <li><a href="resources.html" class="nav-link">Resources</a></li>
+                <li><a href="experience.html" class="nav-link">Experience</a></li>
+                <li><a href="updates.html" class="nav-link">Updates</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Registration</h1>
+            <p>Join Morph MUN 2025 and be part of an extraordinary diplomatic experience</p>
+        </div>
+    </section>
+
+    <!-- Registration Types -->
+    <section class="registration-types">
+        <div class="container">
+            <div class="type-tabs">
+                <button class="type-btn active" data-type="delegate">Delegate Registration</button>
+                <button class="type-btn" data-type="delegation">Delegation Registration</button>
+                <button class="type-btn" data-type="eb">Executive Board</button>
+                <button class="type-btn" data-type="press">International Press</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Individual Delegate Registration -->
+    <section class="registration-section active" id="delegate">
+        <div class="container">
+            <div class="registration-content">
+                <div class="form-section">
+                    <h2>Individual Delegate Registration</h2>
+                    <p class="form-description">Register as an individual delegate to participate in any of our committees.</p>
+                    
+                    <form class="registration-form" id="delegateForm">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="institution">Institution/School *</label>
+                            <input type="text" id="institution" name="institution" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="grade">Grade/Year *</label>
+                            <select id="grade" name="grade" required>
+                                <option value="">Select Grade/Year</option>
+                                <option value="9">Grade 9</option>
+                                <option value="10">Grade 10</option>
+                                <option value="11">Grade 11</option>
+                                <option value="12">Grade 12</option>
+                                <option value="undergraduate">Undergraduate</option>
+                                <option value="graduate">Graduate</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="committee">Preferred Committee *</label>
+                            <select id="committee" name="committee" required>
+                                <option value="">Select Committee</option>
+                                <option value="UNGA">UN General Assembly</option>
+                                <option value="UNSC">UN Security Council</option>
+                                <option value="UNHRC">UN Human Rights Council</option>
+                                <option value="AIPPM">All India Political Parties Meet</option>
+                                <option value="JCC">Joint Crisis Committee</option>
+                                <option value="HCC">Historical Crisis Committee</option>
+                                <option value="Wizengamot">Wizengamot (Harry Potter)</option>
+                                <option value="SmallCouncil">Small Council (Game of Thrones)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="experience">MUN Experience Level *</label>
+                            <select id="experience" name="experience" required>
+                                <option value="">Select Experience Level</option>
+                                <option value="beginner">Beginner (0-2 conferences)</option>
+                                <option value="intermediate">Intermediate (3-5 conferences)</option>
+                                <option value="advanced">Advanced (6+ conferences)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="dietary">Dietary Restrictions</label>
+                            <textarea id="dietary" name="dietary" placeholder="Any dietary restrictions or allergies?"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="special">Special Requirements</label>
+                            <textarea id="special" name="special" placeholder="Any special requirements or accommodations needed?"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Submit Registration</button>
+                    </form>
+                </div>
+                
+                <div class="info-section">
+                    <div class="info-card">
+                        <h3>Registration Fee</h3>
+                        <div class="fee-breakdown">
+                            <div class="fee-item">
+                                <span>Early Bird (Until Dec 31, 2024)</span>
+                                <span class="fee">₹2,500</span>
+                            </div>
+                            <div class="fee-item">
+                                <span>Regular (Jan 1 - Feb 28, 2025)</span>
+                                <span class="fee">₹3,000</span>
+                            </div>
+                            <div class="fee-item">
+                                <span>Late (March 1-14, 2025)</span>
+                                <span class="fee">₹3,500</span>
+                            </div>
+                        </div>
+                        <p class="fee-note">* Includes conference materials, meals, and social events</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3>What's Included</h3>
+                        <ul class="included-items">
+                            <li><i class="fas fa-check"></i> Conference Kit & Materials</li>
+                            <li><i class="fas fa-check"></i> Lunch & Refreshments</li>
+                            <li><i class="fas fa-check"></i> Social Events Access</li>
+                            <li><i class="fas fa-check"></i> Certificate of Participation</li>
+                            <li><i class="fas fa-check"></i> Networking Opportunities</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Delegation Registration -->
+    <section class="registration-section" id="delegation">
+        <div class="container">
+            <div class="registration-content">
+                <div class="form-section">
+                    <h2>Delegation Registration</h2>
+                    <p class="form-description">Register a group of delegates from your institution with special group rates.</p>
+                    
+                    <form class="registration-form" id="delegationForm">
+                        <div class="form-group">
+                            <label for="schoolName">School/Institution Name *</label>
+                            <input type="text" id="schoolName" name="schoolName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="coordinatorName">Coordinator Name *</label>
+                            <input type="text" id="coordinatorName" name="coordinatorName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="coordinatorEmail">Coordinator Email *</label>
+                            <input type="email" id="coordinatorEmail" name="coordinatorEmail" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="coordinatorPhone">Coordinator Phone *</label>
+                            <input type="tel" id="coordinatorPhone" name="coordinatorPhone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="delegateCount">Number of Delegates *</label>
+                            <select id="delegateCount" name="delegateCount" required>
+                                <option value="">Select Number</option>
+                                <option value="5-10">5-10 Delegates</option>
+                                <option value="11-20">11-20 Delegates</option>
+                                <option value="21-30">21-30 Delegates</option>
+                                <option value="31+">31+ Delegates</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="delegationFile">Delegation List (CSV/Excel) *</label>
+                            <input type="file" id="delegationFile" name="delegationFile" accept=".csv,.xlsx,.xls" required>
+                            <small>Upload a file with delegate details (Name, Email, Phone, Grade, Preferred Committee)</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="delegationNotes">Additional Notes</label>
+                            <textarea id="delegationNotes" name="delegationNotes" placeholder="Any special requirements or requests for your delegation?"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Submit Delegation Registration</button>
+                    </form>
+                </div>
+                
+                <div class="info-section">
+                    <div class="info-card">
+                        <h3>Group Discounts</h3>
+                        <div class="discount-breakdown">
+                            <div class="discount-item">
+                                <span>5-10 Delegates</span>
+                                <span class="discount">10% off</span>
+                            </div>
+                            <div class="discount-item">
+                                <span>11-20 Delegates</span>
+                                <span class="discount">15% off</span>
+                            </div>
+                            <div class="discount-item">
+                                <span>21-30 Delegates</span>
+                                <span class="discount">20% off</span>
+                            </div>
+                            <div class="discount-item">
+                                <span>31+ Delegates</span>
+                                <span class="discount">25% off</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3>Delegation Benefits</h3>
+                        <ul class="included-items">
+                            <li><i class="fas fa-check"></i> Dedicated Coordinator Support</li>
+                            <li><i class="fas fa-check"></i> Priority Committee Allocation</li>
+                            <li><i class="fas fa-check"></i> Group Accommodation Options</li>
+                            <li><i class="fas fa-check"></i> Transportation Assistance</li>
+                            <li><i class="fas fa-check"></i> Special Recognition</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Executive Board Application -->
+    <section class="registration-section" id="eb">
+        <div class="container">
+            <div class="registration-content">
+                <div class="form-section">
+                    <h2>Executive Board Application</h2>
+                    <p class="form-description">Apply to be part of our Executive Board and help lead committees.</p>
+                    
+                    <form class="registration-form" id="ebForm">
+                        <div class="form-group">
+                            <label for="ebFirstName">First Name *</label>
+                            <input type="text" id="ebFirstName" name="ebFirstName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="ebLastName">Last Name *</label>
+                            <input type="text" id="ebLastName" name="ebLastName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="ebEmail">Email Address *</label>
+                            <input type="email" id="ebEmail" name="ebEmail" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="ebPhone">Phone Number *</label>
+                            <input type="tel" id="ebPhone" name="ebPhone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="ebInstitution">Current Institution *</label>
+                            <input type="text" id="ebInstitution" name="ebInstitution" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="ebPosition">Preferred Position *</label>
+                            <select id="ebPosition" name="ebPosition" required>
+                                <option value="">Select Position</option>
+                                <option value="chair">Committee Chair</option>
+                                <option value="vice-chair">Vice Chair</option>
+                                <option value="rapporteur">Rapporteur</option>
+                                <option value="crisis-director">Crisis Director</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="ebCommittee">Preferred Committee *</label>
+                            <select id="ebCommittee" name="ebCommittee" required>
+                                <option value="">Select Committee</option>
+                                <option value="UNGA">UN General Assembly</option>
+                                <option value="UNSC">UN Security Council</option>
+                                <option value="UNHRC">UN Human Rights Council</option>
+                                <option value="AIPPM">All India Political Parties Meet</option>
+                                <option value="JCC">Joint Crisis Committee</option>
+                                <option value="HCC">Historical Crisis Committee</option>
+                                <option value="Wizengamot">Wizengamot (Harry Potter)</option>
+                                <option value="SmallCouncil">Small Council (Game of Thrones)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="ebExperience">MUN Experience *</label>
+                            <textarea id="ebExperience" name="ebExperience" placeholder="Describe your MUN experience, including conferences attended and positions held" required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="ebMotivation">Motivation Statement *</label>
+                            <textarea id="ebMotivation" name="ebMotivation" placeholder="Why do you want to be part of the Executive Board? What can you contribute?" required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="ebResume">Resume/CV *</label>
+                            <input type="file" id="ebResume" name="ebResume" accept=".pdf,.doc,.docx" required>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Submit Application</button>
+                    </form>
+                </div>
+                
+                <div class="info-section">
+                    <div class="info-card">
+                        <h3>EB Benefits</h3>
+                        <ul class="included-items">
+                            <li><i class="fas fa-check"></i> Complimentary Registration</li>
+                            <li><i class="fas fa-check"></i> Accommodation Provided</li>
+                            <li><i class="fas fa-check"></i> Leadership Experience</li>
+                            <li><i class="fas fa-check"></i> Networking Opportunities</li>
+                            <li><i class="fas fa-check"></i> Certificate of Leadership</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3>Requirements</h3>
+                        <ul class="included-items">
+                            <li><i class="fas fa-star"></i> Minimum 3 MUN conferences</li>
+                            <li><i class="fas fa-star"></i> Strong leadership skills</li>
+                            <li><i class="fas fa-star"></i> Excellent communication</li>
+                            <li><i class="fas fa-star"></i> Available for training</li>
+                            <li><i class="fas fa-star"></i> Commitment to excellence</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- International Press Application -->
+    <section class="registration-section" id="press">
+        <div class="container">
+            <div class="registration-content">
+                <div class="form-section">
+                    <h2>International Press Application</h2>
+                    <p class="form-description">Join our press corps and report on all committee proceedings.</p>
+                    
+                    <form class="registration-form" id="pressForm">
+                        <div class="form-group">
+                            <label for="pressFirstName">First Name *</label>
+                            <input type="text" id="pressFirstName" name="pressFirstName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="pressLastName">Last Name *</label>
+                            <input type="text" id="pressLastName" name="pressLastName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="pressEmail">Email Address *</label>
+                            <input type="email" id="pressEmail" name="pressEmail" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="pressPhone">Phone Number *</label>
+                            <input type="tel" id="pressPhone" name="pressPhone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="pressInstitution">Institution/School *</label>
+                            <input type="text" id="pressInstitution" name="pressInstitution" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="pressRole">Preferred Role *</label>
+                            <select id="pressRole" name="pressRole" required>
+                                <option value="">Select Role</option>
+                                <option value="reporter">News Reporter</option>
+                                <option value="photographer">Photographer</option>
+                                <option value="editor">Editor</option>
+                                <option value="social-media">Social Media Manager</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="pressExperience">Journalism Experience</label>
+                            <textarea id="pressExperience" name="pressExperience" placeholder="Describe any journalism, photography, or media experience you have"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="pressPortfolio">Portfolio/Samples</label>
+                            <input type="file" id="pressPortfolio" name="pressPortfolio" accept=".pdf,.doc,.docx,.jpg,.png">
+                            <small>Upload samples of your work (articles, photos, etc.)</small>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Submit Application</button>
+                    </form>
+                </div>
+                
+                <div class="info-section">
+                    <div class="info-card">
+                        <h3>Press Benefits</h3>
+                        <ul class="included-items">
+                            <li><i class="fas fa-check"></i> Reduced Registration Fee</li>
+                            <li><i class="fas fa-check"></i> Press Pass & Access</li>
+                            <li><i class="fas fa-check"></i> Media Kit & Resources</li>
+                            <li><i class="fas fa-check"></i> Publication Opportunities</li>
+                            <li><i class="fas fa-check"></i> Professional Experience</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3>Press Fee</h3>
+                        <div class="fee-breakdown">
+                            <div class="fee-item">
+                                <span>Press Registration</span>
+                                <span class="fee">₹1,500</span>
+                            </div>
+                        </div>
+                        <p class="fee-note">* Includes press pass, media kit, and meals</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Information -->
+    <section class="payment-info">
+        <div class="container">
+            <h2>Payment Information</h2>
+            <div class="payment-methods">
+                <div class="payment-method">
+                    <i class="fas fa-credit-card"></i>
+                    <h3>Online Payment</h3>
+                    <p>Pay securely through our online portal using credit/debit cards or UPI.</p>
+                </div>
+                <div class="payment-method">
+                    <i class="fas fa-university"></i>
+                    <h3>Bank Transfer</h3>
+                    <p>Transfer directly to our bank account. Details will be provided after registration.</p>
+                </div>
+                <div class="payment-method">
+                    <i class="fas fa-receipt"></i>
+                    <h3>Invoice</h3>
+                    <p>For institutions, we can provide invoices for bulk payments.</p>
+                </div>
+            </div>
+            
+            <div class="refund-policy">
+                <h3>Refund Policy</h3>
+                <ul>
+                    <li>100% refund until January 31, 2025</li>
+                    <li>50% refund until February 28, 2025</li>
+                    <li>No refunds after March 1, 2025</li>
+                    <li>Force majeure events may result in full refunds</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Morph MUN 2025</h3>
+                    <p>Debating Diplomacy. Creating Change.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="committees.html">Committees</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> info@morphmun.org</p>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Morph MUN. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="registration.js"></script>
+</body>
+</html>

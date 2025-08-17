@@ -1,0 +1,365 @@
+/* Registration Page Specific Styles */
+
+/* Registration Types */
+.registration-types {
+    background: #f2e0b8;
+    padding: 2rem 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.type-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.type-btn {
+    padding: 12px 24px;
+    border: 2px solid #D2691E;
+    background: transparent;
+    color: #D2691E;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.type-btn:hover {
+    background: #D2691E;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.type-btn.active {
+    background: #D2691E;
+    color: white;
+    box-shadow: 0 5px 15px rgba(210, 105, 30, 0.3);
+}
+
+/* Registration Sections */
+.registration-section {
+    display: none;
+    padding: 4rem 0;
+}
+
+.registration-section.active {
+    display: block;
+}
+
+.registration-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+/* Form Section */
+.form-section h2 {
+    color: #8B4513;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.form-description {
+    color: #718096;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.registration-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #8B4513;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background: white;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #D2691E;
+    box-shadow: 0 0 0 3px rgba(210, 105, 30, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-group small {
+    display: block;
+    margin-top: 0.5rem;
+    color: #718096;
+    font-size: 0.85rem;
+}
+
+/* Info Section */
+.info-section {
+    position: sticky;
+    top: 100px;
+}
+
+.info-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.info-card h3 {
+    color: #8B4513;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.fee-breakdown,
+.discount-breakdown {
+    margin-bottom: 1rem;
+}
+
+.fee-item,
+.discount-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.fee-item:last-child,
+.discount-item:last-child {
+    border-bottom: none;
+}
+
+.fee {
+    font-weight: 700;
+    color: #D2691E;
+    font-size: 1.1rem;
+}
+
+.discount {
+    font-weight: 700;
+    color: #38a169;
+    font-size: 1.1rem;
+}
+
+.fee-note {
+    color: #718096;
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+.included-items {
+    list-style: none;
+    padding: 0;
+}
+
+.included-items li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+    color: #4a5568;
+}
+
+.included-items i {
+    color: #38a169;
+    font-size: 1rem;
+}
+
+.included-items li:has(i.fa-star) i {
+    color: #f6ad55;
+}
+
+/* Payment Information */
+.payment-info {
+    background: #f7fafc;
+    padding: 4rem 0;
+}
+
+.payment-info h2 {
+    text-align: center;
+    color: #8B4513;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.payment-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.payment-method {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.payment-method:hover {
+    transform: translateY(-5px);
+}
+
+.payment-method i {
+    font-size: 3rem;
+    color: #D2691E;
+    margin-bottom: 1rem;
+}
+
+.payment-method h3 {
+    color: #8B4513;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.payment-method p {
+    color: #718096;
+    line-height: 1.6;
+}
+
+.refund-policy {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.refund-policy h3 {
+    color: #8B4513;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.refund-policy ul {
+    list-style: none;
+    padding: 0;
+}
+
+.refund-policy li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #e2e8f0;
+    color: #4a5568;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.refund-policy li:before {
+    content: '•';
+    color: #D2691E;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.refund-policy li:last-child {
+    border-bottom: none;
+}
+
+/* Form Validation Styles */
+.form-group.error input,
+.form-group.error select,
+.form-group.error textarea {
+    border-color: #e53e3e;
+}
+
+.form-group.error .error-message {
+    color: #e53e3e;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+}
+
+.form-group.success input,
+.form-group.success select,
+.form-group.success textarea {
+    border-color: #38a169;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .type-tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .type-btn {
+        width: 200px;
+    }
+
+    .registration-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .info-section {
+        position: static;
+    }
+
+    .payment-methods {
+        grid-template-columns: 1fr;
+    }
+
+    .registration-form {
+        padding: 1.5rem;
+    }
+
+    .info-card {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .payment-info h2 {
+        font-size: 2rem;
+    }
+
+    .registration-form {
+        padding: 1rem;
+    }
+
+    .info-card {
+        padding: 1rem;
+    }
+
+    .payment-method {
+        padding: 1.5rem;
+    }
+}

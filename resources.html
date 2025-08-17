@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - Morph MUN 2025</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="resources.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/logo.png" alt="Morph MUN" class="logo">
+                <span>Morph MUN</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="committees.html" class="nav-link">Committees</a></li>
+                <li><a href="registration.html" class="nav-link">Registration</a></li>
+                <li><a href="resources.html" class="nav-link active">Resources</a></li>
+                <li><a href="experience.html" class="nav-link">Experience</a></li>
+                <li><a href="updates.html" class="nav-link">Updates</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Resources</h1>
+            <p>Essential materials and guides to help you prepare for Morph MUN 2025</p>
+        </div>
+    </section>
+
+    <!-- Resource Categories -->
+    <section class="resource-categories">
+        <div class="container">
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="guides">Study Guides</button>
+                <button class="tab-btn" data-category="papers">Position Papers</button>
+                <button class="tab-btn" data-category="rules">Rules of Procedure</button>
+                <button class="tab-btn" data-category="tips">Tips & Guidelines</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Study Guides -->
+    <section class="resource-section active" id="guides">
+        <div class="container">
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>UN General Assembly</h3>
+                    <p>Comprehensive study guide for UNGA delegates covering climate-induced migration and displacement.</p>
+                    <div class="resource-meta">
+                        <span class="status available">Available</span>
+                        <span class="file-size">2.3 MB</span>
+                    </div>
+                    <button class="btn btn-primary" onclick="downloadResource('unga-guide.pdf')">
+                        <i class="fas fa-download"></i> Download
+                    </button>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>UN Security Council</h3>
+                    <p>Detailed guide on cybersecurity threats and international peace and security frameworks.</p>
+                    <div class="resource-meta">
+                        <span class="status available">Available</span>
+                        <span class="file-size">1.8 MB</span>
+                    </div>
+                    <button class="btn btn-primary" onclick="downloadResource('unsc-guide.pdf')">
+                        <i class="fas fa-download"></i> Download
+                    </button>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>UN Human Rights Council</h3>
+                    <p>Guide on digital rights, privacy, and AI regulation in the context of human rights.</p>
+                    <div class="resource-meta">
+                        <span class="status available">Available</span>
+                        <span class="file-size">2.1 MB</span>
+                    </div>
+                    <button class="btn btn-primary" onclick="downloadResource('unhrc-guide.pdf')">
+                        <i class="fas fa-download"></i> Download
+                    </button>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3>Joint Crisis Committee</h3>
+                    <p>Background information and scenario details for "The Great Tech War of 2025".</p>
+                    <div class="resource-meta">
+                        <span class="status coming-soon">Coming Soon</span>
+                        <span class="file-size">-</span>
+                    </div>
+                    <button class="btn btn-secondary" disabled>
+                        <i class="fas fa-clock"></i> Coming Soon
+                    </button>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <h3>Historical Crisis: Cuban Missile Crisis</h3>
+                    <p>Historical context and character profiles for the Cuban Missile Crisis simulation.</p>
+                    <div class="resource-meta">
+                        <span class="status available">Available</span>
+                        <span class="file-size">3.2 MB</span>
+                    </div>
+                    <button class="btn btn-primary" onclick="downloadResource('cuban-crisis-guide.pdf')">
+                        <i class="fas fa-download"></i> Download
+                    </button>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+                    <h3>All India Political Parties Meet</h3>
+                    <p>Guide on electoral reforms and democratic governance in the Indian context.</p>
+                    <div class="resource-meta">
+                        <span class="status available">Available</span>
+                        <span class="file-size">1.5 MB</span>
+                    </div>
+                    <button class="btn btn-primary" onclick="downloadResource('aippm-guide.pdf')">
+                        <i class="fas fa-download"></i> Download
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Position Papers -->
+    <section class="resource-section" id="papers">
+        <div class="container">
+            <div class="resource-content">
+                <div class="content-section">
+                    <h2>Position Paper Guidelines</h2>
+                    <p>Learn how to write effective position papers that will help you excel in committee sessions.</p>
+                    
+                    <div class="guidelines">
+                        <div class="guideline-item">
+                            <h3><i class="fas fa-file-alt"></i> Structure</h3>
+                            <ul>
+                                <li>Header with country name and committee</li>
+                                <li>Introduction (2-3 sentences)</li>
+                                <li>Country's position on the topic</li>
+                                <li>Past actions and policies</li>
+                                <li>Proposed solutions</li>
+                                <li>Conclusion</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="guideline-item">
+                            <h3><i class="fas fa-pen"></i> Writing Tips</h3>
+                            <ul>
+                                <li>Use formal, diplomatic language</li>
+                                <li>Include specific examples and statistics</li>
+                                <li>Maintain consistency with your country's policies</li>
+                                <li>Keep it concise (1-2 pages)</li>
+                                <li>Cite sources when possible</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="guideline-item">
+                            <h3><i class="fas fa-check-circle"></i> Submission</h3>
+                            <ul>
+                                <li>Submit via email to your committee chair</li>
+                                <li>Deadline: March 10, 2025</li>
+                                <li>Format: PDF or Word document</li>
+                                <li>File naming: Country_Committee_PositionPaper</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="sample-papers">
+                        <h3>Sample Position Papers</h3>
+                        <div class="sample-grid">
+                            <div class="sample-item">
+                                <i class="fas fa-file-pdf"></i>
+                                <span>Sample UNGA Position Paper</span>
+                                <button class="btn btn-secondary" onclick="downloadResource('sample-unga.pdf')">
+                                    <i class="fas fa-download"></i> Download
+                                </button>
+                            </div>
+                            <div class="sample-item">
+                                <i class="fas fa-file-pdf"></i>
+                                <span>Sample UNSC Position Paper</span>
+                                <button class="btn btn-secondary" onclick="downloadResource('sample-unsc.pdf')">
+                                    <i class="fas fa-download"></i> Download
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rules of Procedure -->
+    <section class="resource-section" id="rules">
+        <div class="container">
+            <div class="resource-content">
+                <div class="content-section">
+                    <h2>Rules of Procedure</h2>
+                    <p>Essential parliamentary procedure rules that govern all committee sessions at Morph MUN 2025.</p>
+                    
+                    <div class="rules-download">
+                        <div class="rules-card">
+                            <div class="rules-icon">
+                                <i class="fas fa-gavel"></i>
+                            </div>
+                            <h3>Complete Rules of Procedure</h3>
+                            <p>Comprehensive guide covering all parliamentary procedures, motions, and debate formats.</p>
+                            <div class="rules-meta">
+                                <span class="version">Version 2.1</span>
+                                <span class="file-size">4.7 MB</span>
+                            </div>
+                            <button class="btn btn-primary" onclick="downloadResource('rules-of-procedure.pdf')">
+                                <i class="fas fa-download"></i> Download Full Guide
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="quick-reference">
+                        <h3>Quick Reference Guide</h3>
+                        <div class="reference-grid">
+                            <div class="reference-item">
+                                <h4>Motions</h4>
+                                <ul>
+                                    <li><strong>Motion to Open Debate:</strong> Requires majority vote</li>
+                                    <li><strong>Motion to Close Debate:</strong> Requires 2/3 majority</li>
+                                    <li><strong>Motion to Introduce Draft Resolution:</strong> Requires 1/5 support</li>
+                                    <li><strong>Motion to Introduce Amendment:</strong> Requires 1/5 support</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="reference-item">
+                                <h4>Speaking Time</h4>
+                                <ul>
+                                    <li><strong>General Speakers List:</strong> 90 seconds</li>
+                                    <li><strong>Moderated Caucus:</strong> 60 seconds</li>
+                                    <li><strong>Unmoderated Caucus:</strong> 20 minutes</li>
+                                    <li><strong>Introduction of Resolutions:</strong> 120 seconds</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="reference-item">
+                                <h4>Voting</h4>
+                                <ul>
+                                    <li><strong>Procedural Votes:</strong> Simple majority</li>
+                                    <li><strong>Substantive Votes:</strong> 2/3 majority</li>
+                                    <li><strong>Roll Call Vote:</strong> When requested by 1/5 of committee</li>
+                                    <li><strong>Abstentions:</strong> Not allowed on procedural matters</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips & Guidelines -->
+    <section class="resource-section" id="tips">
+        <div class="container">
+            <div class="resource-content">
+                <div class="content-section">
+                    <h2>Tips & Guidelines</h2>
+                    <p>Essential advice for delegates to maximize their MUN experience and performance.</p>
+                    
+                    <div class="tips-grid">
+                        <div class="tip-card">
+                            <div class="tip-icon">
+                                <i class="fas fa-microphone"></i>
+                            </div>
+                            <h3>Public Speaking</h3>
+                            <ul>
+                                <li>Speak clearly and at a moderate pace</li>
+                                <li>Maintain eye contact with the committee</li>
+                                <li>Use gestures to emphasize key points</li>
+                                <li>Practice your speeches beforehand</li>
+                                <li>Stay within the time limit</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tip-card">
+                            <div class="tip-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h3>Negotiation</h3>
+                            <ul>
+                                <li>Build alliances early in the conference</li>
+                                <li>Listen actively to other delegates</li>
+                                <li>Find common ground and compromise</li>
+                                <li>Be respectful of different viewpoints</li>
+                                <li>Document agreements in writing</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tip-card">
+                            <div class="tip-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <h3>Research</h3>
+                            <ul>
+                                <li>Research your country's policies thoroughly</li>
+                                <li>Understand the historical context</li>
+                                <li>Stay updated on current events</li>
+                                <li>Use reliable sources for information</li>
+                                <li>Prepare statistics and examples</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tip-card">
+                            <div class="tip-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Networking</h3>
+                            <ul>
+                                <li>Attend all social events</li>
+                                <li>Exchange contact information</li>
+                                <li>Follow up after the conference</li>
+                                <li>Join MUN alumni networks</li>
+                                <li>Share your experiences</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="first-time-guide">
+                        <h3>First-Time Delegate Guide</h3>
+                        <div class="guide-content">
+                            <div class="guide-section">
+                                <h4>Before the Conference</h4>
+                                <ol>
+                                    <li>Complete your registration and payment</li>
+                                    <li>Download and study your committee's background guide</li>
+                                    <li>Research your assigned country thoroughly</li>
+                                    <li>Write your position paper</li>
+                                    <li>Prepare your opening speech</li>
+                                    <li>Pack appropriate business attire</li>
+                                </ol>
+                            </div>
+                            
+                            <div class="guide-section">
+                                <h4>During the Conference</h4>
+                                <ol>
+                                    <li>Arrive early for registration and orientation</li>
+                                    <li>Introduce yourself to other delegates</li>
+                                    <li>Participate actively in all sessions</li>
+                                    <li>Take notes during debates</li>
+                                    <li>Collaborate on draft resolutions</li>
+                                    <li>Attend social events and networking sessions</li>
+                                </ol>
+                            </div>
+                            
+                            <div class="guide-section">
+                                <h4>After the Conference</h4>
+                                <ol>
+                                    <li>Reflect on your experience</li>
+                                    <li>Connect with fellow delegates on social media</li>
+                                    <li>Apply for future MUN conferences</li>
+                                    <li>Share your experience with others</li>
+                                    <li>Consider joining your school's MUN club</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Code of Conduct -->
+    <section class="code-of-conduct">
+        <div class="container">
+            <h2>Code of Conduct</h2>
+            <div class="conduct-content">
+                <div class="conduct-section">
+                    <h3>Professional Behavior</h3>
+                    <ul>
+                        <li>Maintain professional attire throughout the conference</li>
+                        <li>Address fellow delegates and chairs respectfully</li>
+                        <li>Follow parliamentary procedure and committee rules</li>
+                        <li>Arrive on time for all sessions and events</li>
+                        <li>Use appropriate language and avoid offensive remarks</li>
+                    </ul>
+                </div>
+                
+                <div class="conduct-section">
+                    <h3>Academic Integrity</h3>
+                    <ul>
+                        <li>Submit original position papers</li>
+                        <li>Cite sources properly in all written work</li>
+                        <li>Maintain consistency with your country's policies</li>
+                        <li>Avoid plagiarism and academic dishonesty</li>
+                        <li>Respect intellectual property rights</li>
+                    </ul>
+                </div>
+                
+                <div class="conduct-section">
+                    <h3>Inclusivity & Respect</h3>
+                    <ul>
+                        <li>Respect diverse viewpoints and backgrounds</li>
+                        <li>Create an inclusive environment for all delegates</li>
+                        <li>Report any instances of harassment or discrimination</li>
+                        <li>Support fellow delegates, especially newcomers</li>
+                        <li>Celebrate cultural diversity and differences</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="conduct-download">
+                <button class="btn btn-primary" onclick="downloadResource('code-of-conduct.pdf')">
+                    <i class="fas fa-download"></i> Download Code of Conduct
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Morph MUN 2025</h3>
+                    <p>Debating Diplomacy. Creating Change.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="committees.html">Committees</a></li>
+                        <li><a href="registration.html">Registration</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> info@morphmun.org</p>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Morph MUN. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="resources.js"></script>
+</body>
+</html>
